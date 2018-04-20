@@ -1,0 +1,34 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-place_code" class="control-label col-xs-12 col-sm-2">{:__('Place_code')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-place_code" data-rule="required" class="form-control" name="row[place_code]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-gprs_id" class="control-label col-xs-12 col-sm-2">{:__('Gprs_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-gprs_id" data-rule="required" data-primary-key="gprs_id" data-field="gprs_id" data-source="car/carport/index" class="form-control selectpage" name="row[gprs_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-door_id" class="control-label col-xs-12 col-sm-2">{:__('Door_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-door_id" data-rule="required" class="form-control" name="row[door_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-status" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['0'=>__('Primary'), '1'=>__('Normal')])}
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

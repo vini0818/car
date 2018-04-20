@@ -1,0 +1,100 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-openid" class="control-label col-xs-12 col-sm-2">{:__('Openid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-openid" class="form-control" name="row[openid]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-phone" class="control-label col-xs-12 col-sm-2">{:__('Phone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-nickname" class="control-label col-xs-12 col-sm-2">{:__('Nickname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-nickname" data-rule="required" class="form-control" name="row[nickname]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-sex" class="control-label col-xs-12 col-sm-2">{:__('Sex')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sex" class="form-control" name="row[sex]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-icon" class="control-label col-xs-12 col-sm-2">{:__('Icon')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-icon" class="form-control" name="row[icon]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-country" class="control-label col-xs-12 col-sm-2">{:__('Country')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-country" class="form-control" name="row[country]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-province" class="control-label col-xs-12 col-sm-2">{:__('Province')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-province" class="form-control" name="row[province]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-city" class="control-label col-xs-12 col-sm-2">{:__('City')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-city" class="form-control" data-toggle="city-picker" name="row[city]" type="text"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-balance" class="control-label col-xs-12 col-sm-2">{:__('Balance')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-balance" class="form-control" step="0.01" name="row[balance]" type="number" value="0.00">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-is_agree" class="control-label col-xs-12 col-sm-2">{:__('Is_agree')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-is_agree" class="form-control" name="row[is_agree]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-deposit_status" class="control-label col-xs-12 col-sm-2">{:__('Deposit_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-deposit_status" class="form-control" name="row[deposit_status]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-member_card" class="control-label col-xs-12 col-sm-2">{:__('Member_card')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-member_card" class="form-control" name="row[member_card]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-member_card_rfid" class="control-label col-xs-12 col-sm-2">{:__('Member_card_rfid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-member_card_rfid" class="form-control" name="row[member_card_rfid]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-member_card_status" class="control-label col-xs-12 col-sm-2">{:__('Member_card_status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-member_card_status" class="form-control" name="row[member_card_status]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_time" class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_time]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

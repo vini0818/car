@@ -1,0 +1,64 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-door_id" class="control-label col-xs-12 col-sm-2">{:__('Door_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-door_id" data-rule="required" data-primary-key="door_id" data-field="door_id" data-source="car/carplace/index" class="form-control selectpage" name="row[door_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-car_id" class="control-label col-xs-12 col-sm-2">{:__('Car_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-car_id" data-rule="required" class="form-control" name="row[car_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-bluetooth_id" class="control-label col-xs-12 col-sm-2">{:__('Bluetooth_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-bluetooth_id" data-rule="required" class="form-control" name="row[bluetooth_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-model" class="control-label col-xs-12 col-sm-2">{:__('Model')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-model" class="form-control" name="row[model]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-brand" class="control-label col-xs-12 col-sm-2">{:__('Brand')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-brand" class="form-control" name="row[brand]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-color" class="control-label col-xs-12 col-sm-2">{:__('Color')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-color" class="form-control" name="row[color]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-electricity" class="control-label col-xs-12 col-sm-2">{:__('Electricity')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-electricity" class="form-control" name="row[electricity]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-flag" class="control-label col-xs-12 col-sm-2">{:__('Flag')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-flag" class="form-control" name="row[flag]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-status" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['0'=>__('Primary'), '1'=>__('Normal')])}
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

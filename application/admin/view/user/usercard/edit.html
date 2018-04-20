@@ -1,0 +1,52 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-user_id" class="control-label col-xs-12 col-sm-2">{:__('User_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-user_id" data-rule="required" data-source="user/user/index" data-field="nickname" class="form-control selectpage" name="row[user_id]" type="text" value="{$row.user_id}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-name" class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text" value="{$row.name}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-phone" class="control-label col-xs-12 col-sm-2">{:__('Phone')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-phone" data-rule="required" class="form-control" name="row[phone]" type="text" value="{$row.phone}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-address" class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-address" data-rule="required" class="form-control" name="row[address]" type="text" value="{$row.address}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_time" class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_time]" type="text" value="{$row.create_time}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-express" class="control-label col-xs-12 col-sm-2">{:__('Express')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-express" data-rule="required" class="form-control" name="row[express]" type="text" value="{$row.express}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-express_number" class="control-label col-xs-12 col-sm-2">{:__('Express_number')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-express_number" data-rule="required" class="form-control" name="row[express_number]" type="text" value="{$row.express_number}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="button" onclick="javascript:closeLayer();" class="btn btn-default btn-embossed">{:__('Cancel')}</button>
+        </div>
+    </div>
+</form>

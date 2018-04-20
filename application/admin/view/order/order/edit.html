@@ -1,0 +1,52 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-order_no" class="control-label col-xs-12 col-sm-2">{:__('Order_no')}:</label>
+        <div class="col-xs-12 col-sm-7">
+            <input id="c-order_no" class="form-control" name="row[order_no]" type="text" value="{$row.order_no}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-start_time" class="control-label col-xs-12 col-sm-2">{:__('Start_time')}:</label>
+        <div class="col-xs-12 col-sm-7">
+            <input id="c-start_time" data-rule="required" class="form-control" name="row[start_time]" type="text" value="{$row.start_time}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-end_time" class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
+        <div class="col-xs-12 col-sm-7">
+            <input id="c-end_time" data-rule="required" class="form-control" name="row[end_time]" type="text" value="{$row.end_time}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-duration" class="control-label col-xs-12 col-sm-2">{:__('Duration')}:</label>
+        <div class="col-xs-12 col-sm-7">
+            <input id="c-duration" data-rule="required" class="form-control" name="row[duration]" type="text" value="{$row.duration}" disabled="disabled">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-total_fee" class="control-label col-xs-12 col-sm-2">{:__('Total_fee')}:</label>
+        <div class="col-xs-12 col-sm-7">
+            <input id="c-total_fee" data-rule="required;range(0.01~{$row.total_fee})" class="form-control" name="row[total_fee]" type="number" step="0.01" value="{$row.total_fee}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-cash_fee" class="control-label col-xs-12 col-sm-2">{:__('Cash_fee')}:</label>
+        <div class="col-xs-12 col-sm-7">
+            <input id="c-cash_fee" class="form-control" name="row[cash_fee]" type="text" value="{$row.cash_fee}" readonly="readonly">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-balance_fee" class="control-label col-xs-12 col-sm-2">{:__('Balance_fee')}:</label>
+        <div class="col-xs-12 col-sm-7">
+            <input id="c-balance_fee" class="form-control" name="row[balance_fee]" type="text" value="{$row.balance_fee}" readonly="readonly">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-7">
+            <button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
