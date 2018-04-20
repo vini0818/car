@@ -1,0 +1,30 @@
+[ 2018-04-20T17:43:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-04-20T17:43:16+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-04-20T17:43:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006000s ]
+[ 2018-04-20T17:43:16+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-04-20T17:43:16+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=admin;charset=utf8
+[ 2018-04-20T17:43:16+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'warning' [ RunTime:0.007000s ]
+[ 2018-04-20T17:43:16+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'admin' AND table_name = 'warning' ORDER BY ORDINAL_POSITION [ RunTime:0.001000s ]
+[ 2018-04-20T17:43:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ 2018-04-20T17:43:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-04-20T17:43:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005000s ]
+[ 2018-04-20T17:43:17+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-04-20T17:43:17+08:00 ][ info ] [ LANG ] D:\www\service\wx\admin\application\admin\lang/zh-cn.php
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=admin;charset=utf8
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.001000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `name` = 'warning' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'warning' , '系统预警消息' , 'fa fa-warning\r' , '' , 1 , 'normal' , 1524217397 , 1524217397) [ RunTime:0.025000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'warning/index' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'warning/add' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'warning/edit' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'warning/del' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'warning/multi' LIMIT 1 [ RunTime:0.001000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'warning/detail' LIMIT 1 [ RunTime:0.000000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 397 , 'warning/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1524217397 , 1524217397) [ RunTime:0.009000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 397 , 'warning/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1524217397 , 1524217397) [ RunTime:0.000000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 397 , 'warning/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1524217397 , 1524217397) [ RunTime:0.000000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 397 , 'warning/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1524217397 , 1524217397) [ RunTime:0.000000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 397 , 'warning/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1524217397 , 1524217397) [ RunTime:0.001000s ]
+[ 2018-04-20T17:43:17+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 397 , 'warning/detail' , 'fa fa-circle-o' , '详情' , 0 , 'normal' , 1524217397 , 1524217397) [ RunTime:0.000000s ]

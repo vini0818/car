@@ -3,7 +3,6 @@
 namespace app\admin\controller;
 
 use app\common\controller\Backend;
-use think\Config;
 
 /**
  * 控制台
@@ -69,10 +68,6 @@ class Dashboard extends Backend {
 
         $hooks = config('addons.hooks');
         $uploadmode = isset($hooks['upload_config_init']) && $hooks['upload_config_init'] ? implode(',', $hooks['upload_config_init']) : 'local';
-        $addonComposerCfg = ROOT_PATH . '/vendor/karsonzhang/fastadmin-addons/composer.json';
-        Config::parse($addonComposerCfg, "json", "composer");
-        $config = Config::get("composer");
-        $addonVersion = isset($config['version']) ? $config['version'] : __('Unknown');
         $data = [
             'totaluser'        => $total_user,
             'monthactiveuser'  => $month_active_user,
@@ -86,7 +81,6 @@ class Dashboard extends Backend {
             'sevendau'         => $sevendau,
             'paylist'          => $paylist,
             'createlist'       => $createlist,
-            'addonversion'       => $addonVersion,
             'uploadmode'       => $uploadmode
         ];
         cache(config('cache_platform_data'), $data, ['expire' => 300]);

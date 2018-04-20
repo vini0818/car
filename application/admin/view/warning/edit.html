@@ -1,0 +1,46 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-type" class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-type" class="form-control" name="row[type]" type="text" value="{$row.type}" readonly="true">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-title" class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="{$row.title}" readonly="true">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-content" class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" data-rule="required" class="form-control editor" rows="5" name="row[content]" cols="50" readonly="true">{$row.content}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-is_read" class="control-label col-xs-12 col-sm-2">{:__('Is_read')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-is_read" class="form-control" name="row[is_read]" type="text" value="{$row.is_read}" readonly="true">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-read_time" class="control-label col-xs-12 col-sm-2">{:__('Read_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-read_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[read_time]" type="text" value="{$row.read_time}" readonly="true">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-memo" class="control-label col-xs-12 col-sm-2">{:__('Memo')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-memo" class="form-control " rows="5" name="row[memo]" cols="50">{$row.memo}</textarea>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -179,6 +179,7 @@ return [
     'Audit'                                                 => '审核',
     'Set to enable'                                         => '设为启用',
     'Set to disable'                                        => '设为禁用',
+    'Marked as read'                                        => '标为已读',
     'Enable'                                                => '启用',
     'Disable'                                               => '禁用',
     'Enable/Disable'                                        => '启用/禁用',

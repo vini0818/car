@@ -34,6 +34,10 @@ class Dict {
     const MESSAGE_TYPE_REFUND = 2; //退款
     const MESSAGE_TYPE_CARD_SEND = 3; //实物卡寄出
     const MESSAGE_TYPE_CARD_ACTIVE = 4; //实物卡激活
+    //2.4 预警消息类型
+    const WARN_TYPE_LOW_ELECTRIC = '01'; //设备电量不足
+    const WARN_TYPE_NO_RETURN = '11'; //车辆长时间未归还异常
+    const WARN_TYPE_NO_PAY = '12'; //大额订单长时间未结算
     ////--------------------------- 3.业务状态 --------------------------------
     //3.1 实物卡发放状态
     const MEM_CARD_UNACTIVE = 0; //未绑定
@@ -267,6 +271,21 @@ class Dict {
             'id'    => self::REFUND_STATUS_FAIL,
             'name'  => '退款失败',
             'color' => 'deleted'
+        )
+    );
+    //WARN_TYPE 预警消息类型
+    protected static $WARN_TYPE_CONFIG = array(
+        self::WARN_TYPE_LOW_ELECTRIC => array(
+            'id'   => self::WARN_TYPE_LOW_ELECTRIC,
+            'name' => '低电量'
+        ),
+        self::WARN_TYPE_NO_RETURN    => array(
+            'id'   => self::WARN_TYPE_NO_RETURN,
+            'name' => '长时间未还车'
+        ),
+        self::WARN_TYPE_NO_PAY       => array(
+            'id'   => self::WARN_TYPE_NO_PAY,
+            'name' => '长时间未支付'
         )
     );
 
